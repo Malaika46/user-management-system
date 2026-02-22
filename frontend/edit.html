@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UserFlow - Edit User</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="animated-bg"></div>
+  <div class="container">
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fas fa-users-cog"></i>
+        <span>UserFlow</span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="add.html"><i class="fas fa-user-plus"></i> Add User</a>
+      </div>
+    </nav>
+
+    <main class="content">
+      <div class="page-header">
+        <h1><i class="fas fa-edit"></i> Edit User</h1>
+        <a href="index.html" class="btn-secondary">
+          <i class="fas fa-arrow-left"></i> Back to List
+        </a>
+      </div>
+
+      <div class="form-container">
+        <form id="editUserForm" class="animated-form">
+          <div class="form-group">
+            <label for="name">
+              <i class="fas fa-user"></i> Full Name
+            </label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">
+              <i class="fas fa-envelope"></i> Email Address
+            </label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-primary">
+              <i class="fas fa-sync-alt"></i> Update User
+            </button>
+            <a href="index.html" class="btn-secondary">
+              <i class="fas fa-times"></i> Cancel
+            </a>
+          </div>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
